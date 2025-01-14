@@ -2,13 +2,14 @@
   "name": "playwright-vercel",
   "version": "1.0.0",
   "scripts": {
-    "prepare": "husky && pnpm exec playwright install-deps",
+    "prepare": "husky",
     "playwright": "npx playwright test",
     "playwright:headed": "npx playwright test --headed",
     "playwright:report": "npx playwright test --trace on --reporter=html"
   },
   "dependencies": {
-    "@playwright/test": "^1.49.1"
+    "@playwright/test": "^1.49.1",
+    "playwright": "^1.49.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.5.0",
