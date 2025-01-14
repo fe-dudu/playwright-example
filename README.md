@@ -5,3 +5,6 @@
 
 # Vercel > Setting > Git > Ignored Build Step
 - **Only build if there are changes in a forder**: `git diff HEAD^ HEAD --quiet -- ./tests`
+
+# Run
+- `dotenv -e .env pnpm playwright`

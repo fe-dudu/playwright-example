@@ -1,14 +1,16 @@
 {
-  "name": "playwright-vercel",
+  "name": "playwright-example",
   "version": "1.0.0",
   "scripts": {
     "prepare": "husky",
-    "playwright": "npx playwright test",
-    "playwright:headed": "npx playwright test --headed",
+    "dev": "dotenv -e .env npx playwright test",
+    "dev:headed": "dotenv -e .env npx playwright test --headed",
+    "dev:report": "dotenv -e .env npx playwright test --trace on --reporter=html",
     "playwright:report": "npx playwright test --trace on --reporter=html"
   },
   "dependencies": {
     "@playwright/test": "^1.49.1",
+    "dotenv": "^16.4.7",
     "playwright": "^1.49.1"
   },
   "devDependencies": {
