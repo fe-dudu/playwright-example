@@ -2,7 +2,7 @@
   "name": "playwright-vercel",
   "version": "1.0.0",
   "scripts": {
-    "prepare": "husky && pnpm exec playwright install",
+    "prepare": "husky && pnpm exec playwright install-deps",
     "playwright": "npx playwright test",
     "playwright:headed": "npx playwright test --headed",
     "playwright:report": "npx playwright test --trace on --reporter=html"
